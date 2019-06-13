@@ -1,7 +1,7 @@
 <h2><%= @heroine.super_name %></h2>
 
 <h3>Name: <%= @heroine.name %></h3>
-<h3>Superheroine Name: <%= link_to @heroine.power.name, powers_path %></h3>
+<h3>Superheroine Name: <%= link_to @heroine.power.name.capitalize, powers_path %></h3>
 
 
 
