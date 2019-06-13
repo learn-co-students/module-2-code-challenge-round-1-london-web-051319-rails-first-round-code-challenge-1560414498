@@ -1,0 +1,2 @@
+heroine belongs to a power
+power can have many heroines

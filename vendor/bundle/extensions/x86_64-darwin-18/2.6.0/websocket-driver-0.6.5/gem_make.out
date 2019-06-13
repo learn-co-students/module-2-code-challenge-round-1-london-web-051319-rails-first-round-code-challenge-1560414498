@@ -1,0 +1,15 @@
+current directory: /Users/Moniet97/Dropbox/Programming/FLATIRON/module-2-code-challenge-round-1-london-web-051319-rails-first-round-code-challenge-1560414498/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/Moniet97/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/Moniet97/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190613-22061-12rvdyd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Moniet97/Dropbox/Programming/FLATIRON/module-2-code-challenge-round-1-london-web-051319-rails-first-round-code-challenge-1560414498/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/Moniet97/Dropbox/Programming/FLATIRON/module-2-code-challenge-round-1-london-web-051319-rails-first-round-code-challenge-1560414498/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/Moniet97/Dropbox/Programming/FLATIRON/module-2-code-challenge-round-1-london-web-051319-rails-first-round-code-challenge-1560414498/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20190613-22061-s9pccb
