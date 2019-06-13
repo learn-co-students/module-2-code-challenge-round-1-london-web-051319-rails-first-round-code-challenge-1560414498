@@ -1,0 +1,10 @@
+<h2><%= @heroine.super_name %></h2>
+
+<h3>Name: <%= @heroine.name %></h3>
+<h3>Superheroine Name: <%= link_to @heroine.power.name, powers_path %></h3>
+
+
+
+<br>
+<hr>
+<%= button_to("Go Back", heroines_path, :method => :get, :form_class => "back_btn") %>
