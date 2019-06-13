@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ImmersiveRailsAssessment</title>
-    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Superheroine App!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  
+  <nav class="level">
+  <p class="level-item has-text-centered">
+    <a class="link is-info"><%= link_to 'new heroine', new_heroine_path %></a>
+  </p>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="title">HEROINES</p>
+    </div>
+  </div>
+  <p class="level-item has-text-centered">
+    <a class="link is-info"><%= link_to 'all heroines', heroines_path %></a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info"><%= link_to 'all superpowers', powers_path %></a>
+  </p>
+</nav>
   </head>
-
   <body>
     <%= yield %>
   </body>
