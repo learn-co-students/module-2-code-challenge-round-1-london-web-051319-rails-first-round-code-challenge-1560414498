@@ -1,0 +1,8 @@
+<h1>Power Profile: <%= @power.name %></h1>
+
+<h3>Power Name: <%= @power.name %></h3>
+<h3>Description: <%= @power.description %></h3>
+<h4>Heroines: <% @power.heroines.each do |hero| %>
+
+   <p><%= link_to "#{hero.name}", heroine_path(hero) %></p>
+   <%end%>
