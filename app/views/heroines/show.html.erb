@@ -1,0 +1,15 @@
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Heroine Profile
+      </h1>
+    </div>
+  </div>
+</section>
+
+<h3>Super Name: <%=@heroine.super_name%></h3>
+
+<h4>Secret Identity: <%=@heroine.name%></h4>
+
+<h4>Super Power: <%=link_to @heroine.power.name, power_path(@heroine.power)%></h4>

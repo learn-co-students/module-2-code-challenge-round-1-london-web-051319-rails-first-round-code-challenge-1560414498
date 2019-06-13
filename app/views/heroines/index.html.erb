@@ -1,9 +1,17 @@
-<h2>All Heroines</h2>
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        All Superheroines
+      </h1>
+    </div>
+  </div>
+</section>
 
 <ul>
   <% @heroines.each do |heroine| %>
     <li>
-      <%= heroine.super_name %>
+      <h3><%=link_to heroine.super_name, heroine_path(heroine)%></h3>
     </li>
     <br>
   <% end %>
