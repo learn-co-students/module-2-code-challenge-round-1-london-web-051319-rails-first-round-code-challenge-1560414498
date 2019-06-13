@@ -1,5 +1,17 @@
 <h2>All Heroines</h2>
 
+<br>
+<br>
+
+Search by superpower:
+<%= form_tag heroines_path, method: :get do%>
+<div class="form">
+<%= label_tag "Superpower:" %>
+    <%= collection_select :search, :id, Power.all, :id, :name %>
+<%= submit_tag "Search" %>
+</div>
+<%end%>
+
 <ul>
   <% @heroines.each do |heroine| %>
     <li>
