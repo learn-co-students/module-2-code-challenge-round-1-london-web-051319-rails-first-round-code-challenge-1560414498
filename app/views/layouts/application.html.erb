@@ -24,8 +24,16 @@
     <a class="link is-info"><%= link_to 'all superpowers', powers_path %></a>
   </p>
 </nav>
+<% if flash[:errors] %>
+    <div class="control">
+      <% flash[:errors].each do |error| %>
+        <p><%= error %></p>
+      <% end %>
+    </div>
+    <% end %>
   </head>
   <body>
+  
     <%= yield %>
   </body>
 </html>
