@@ -15,7 +15,12 @@ class HeroinesController < ApplicationController
 
   def create
     heroine = Heroine.create heroine_params
-    redirect_to heroine
+    if heroine.valid?
+      redirect_to heroine
+    else
+      flash[:errors] = heroine.errors.full_messages
+      redirect_to new_heroine_path
+    end
   end
 
   private
