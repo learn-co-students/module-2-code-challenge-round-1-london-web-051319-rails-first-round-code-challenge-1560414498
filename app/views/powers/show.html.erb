@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        All Superheroines
+        Power Profile
       </h1>
     </div>
   </div>
@@ -10,11 +10,8 @@
 
 <br>
 
-<ul>
-  <% @heroines.each do |heroine| %>
-    <li>
-      <h3><%=link_to heroine.super_name, heroine%></h3>
-    </li>
-    <br>
-  <% end %>
-</ul>
+<h2>SuperPower: <%=@power.name%></h2>
+
+<br>
+
+<p>Description: <%=@power.description%></p>
