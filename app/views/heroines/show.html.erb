@@ -1,0 +1,7 @@
+<h1><%= @heroine.super_name %></h1>
+<h2> Day to day goes by: <%= @heroine.name %></h2>
+
+<h3>Powers include: </h3>
+<%= @heroine.powers.each do |power| %>
+<li><%= link_to power.name, power_show %></li>
+<% end %>
