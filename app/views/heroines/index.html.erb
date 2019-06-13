@@ -8,10 +8,12 @@
   </div>
 </section>
 
+<br>
+
 <ul>
   <% @heroines.each do |heroine| %>
     <li>
-      <h3><%=link_to heroine.super_name, heroine_path(heroine)%></h3>
+      <h3><%=link_to heroine.super_name, heroine%></h3>
     </li>
     <br>
   <% end %>

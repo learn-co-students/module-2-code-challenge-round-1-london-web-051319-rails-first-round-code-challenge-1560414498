@@ -22,7 +22,6 @@ class HeroinesController < ApplicationController
       end
   end
 
-
 private
 
 def heroine_params

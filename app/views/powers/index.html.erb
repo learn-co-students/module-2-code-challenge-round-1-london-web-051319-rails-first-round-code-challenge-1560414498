@@ -8,10 +8,12 @@
   </div>
 </section>
 
+<br>
+
 <ul>
   <% @powers.each do |power| %>
     <li>
-      <h2><%= link_to power.name, power_path(power) %></h2>
+      <h2><%= link_to power.name, power %></h2>
       <br>
       Description: <%= power.description %>
     </li>
