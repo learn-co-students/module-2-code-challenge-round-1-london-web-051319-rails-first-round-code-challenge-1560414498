@@ -5,3 +5,13 @@ Power: <%= @power.name %>
 <br>
 
 Description: <%= @power.description %>
+<br>
+<br>
+<br>
+<br>
+
+Superheroines with this power:
+
+<% @heroines.each do |heroine| %>
+<li><%= link_to heroine.name, heroine_path(heroine) %>
+<%end%>
