@@ -14,7 +14,7 @@ class HeroinesController < ApplicationController
   def create
     heroine = Heroine.create heroine_params
     if heroine.valid? == true
-      redirect_to heroine_path
+      redirect_to heroine_path(heroine)
     else 
       redirect_to new_heroine_path
     end
@@ -23,6 +23,6 @@ class HeroinesController < ApplicationController
   private
 
   def heroine_params
-    params.require(:heroine).permit(:name, :super_name, :power_ids)
+    params.require(:heroine).permit(:name, :super_name, :power_id)
   end
 end

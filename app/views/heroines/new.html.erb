@@ -5,6 +5,6 @@
 <%= f.label :super_name %>
 <%= f.text_field :super_name %><br>
 <%= f.label "Powers" %>
-<%= f.collection_select :power_ids, Power.all, :id, :name %><br>
+<%= f.collection_select :power_id, Power.all, :id, :name %><br>
 <%= f.submit %>
 <% end %>
