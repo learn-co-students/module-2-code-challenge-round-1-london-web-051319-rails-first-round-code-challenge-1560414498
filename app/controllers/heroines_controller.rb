@@ -2,7 +2,9 @@ class HeroinesController < ApplicationController
    before_action :set_heroine, only: [:show, :edit, :update, :destroy]
 
   def index
-    @heroines = Heroine.all
+    # @heroines = Heroine.all
+    @heroines = Heroine.filter(params)
+    @powers = Power.all
   end
 
   def show

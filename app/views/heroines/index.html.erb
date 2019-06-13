@@ -1,5 +1,14 @@
 <h2>All Heroines</h2>
 
+<p>Refine by power: </p>
+<% @powers.each do |power| %>
+<%= link_to "#{power.name}", power_path(id: power.id) %>
+&emsp;
+<%end%>
+&emsp;
+<%=link_to "All Heroines", heroines_path %>
+<br><br>
+
 <ul>
   <% @heroines.each do |heroine| %>
     <li>

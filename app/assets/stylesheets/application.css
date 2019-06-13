@@ -57,3 +57,8 @@
 .body_content {
    padding: 15px;
 }
+
+input [type=text] {
+   border: 2px solid blue;
+   border-radius: 6px;
+}
